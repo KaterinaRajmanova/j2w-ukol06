@@ -13,17 +13,17 @@ import java.util.Random;
  */
 @Controller
 public class CitatyController {
-  private final CitatyService service;
+   private final CitatyService citatyService;
 
   @Autowired
   public CitatyController( CitatyService service) {
-   this.service = service;
+   this.citatyService = service;
   }
 
   @GetMapping("/")
   public ModelAndView nahodnyCitat() {
     ModelAndView modelAndView = new ModelAndView("citat");
-    modelAndView.addObject("citat", service.vratNahodnyCitat());
+    modelAndView.addObject("citat", citatyService.nahodnyCitat());
     return modelAndView;
   }
 }
