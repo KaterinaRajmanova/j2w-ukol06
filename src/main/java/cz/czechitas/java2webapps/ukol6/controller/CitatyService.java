@@ -22,4 +22,8 @@ public class CitatyService {
         int poradi = nahodneCisloService.dejNahodneCislo(citatyRepository.pocet());
         return citatyRepository.citat(poradi);
     }
+
+    public String konkretniCitat(int cislo) {
+        return citatyRepository.citat(cislo);
+    }
 }

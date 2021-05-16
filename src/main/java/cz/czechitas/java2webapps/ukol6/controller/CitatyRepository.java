@@ -1,9 +1,7 @@
 package cz.czechitas.java2webapps.ukol6.controller;
 
 import org.springframework.stereotype.Service;
-
 import java.util.List;
-import java.util.Random;
 
 @Service
 public class CitatyRepository {
